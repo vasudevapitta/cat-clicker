@@ -1,0 +1,30 @@
+.num {
+  z-index:1;
+  font: normal 100px/150% Arial, Helvetica, sans-serif;
+  color: #818181;
+  transform: translate(20px, -105px);
+  position: absolute;
+  text-align: left;
+}
+.img {
+  width: 400px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.32);
+box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.32);
+}
+
+.img:hover {
+  opacity: 0.9;
+  transform: scale(1.01, 1.01);
+}
+.img:active {
+  transform: scale(0.99, 0.99);
+}
+.name {
+  font-size: 25px;
+  margin: 1px 10px;
+  font: normal 20px/150% Arial, Helvetica, sans-serif;
+}
