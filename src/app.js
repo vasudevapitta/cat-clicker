@@ -2,7 +2,7 @@ let fragment = document.createDocumentFragment();
 let allCats = [];
 class Cat {
 	constructor(name, url, altTxt, id){
-		this.name = name;
+		this.name = name + " ↓";
 		this.url = url;
 		this.count = 0;
 		this.id = id;
@@ -44,19 +44,26 @@ let catHolder = {
 };
 */
 
-const cat1 = new Cat("Cindy",
+const cat1 = new Cat("Missy",
 	"https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
 	"picture of a cat",
 	0);
 
 cat1.buildTemplate();
 
-const cat2 = new Cat("Eddy",
+const cat2 = new Cat("Smokey",
 	"https://kittentoob.com/wp-content/uploads/2018/06/Cat-Growling.jpg",
 	"picture of a cat",
 	1);
 
 cat2.buildTemplate();
+
+const cat3 = new Cat("Sooty",
+	"https://vignette.wikia.nocookie.net/disney/images/8/89/Cute-Cat.jpg/revision/latest?cb=20130828113117",
+	"picture of a cat",
+	2);
+
+cat3.buildTemplate();
 
 //final appending the documentFragment to the DOM
 const body = $("body");

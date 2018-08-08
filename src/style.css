@@ -1,11 +1,21 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1,
+h3 {
+  color: #5D4178;
+}
+
 .num {
   z-index:1;
   font: normal 100px/150% Arial, Helvetica, sans-serif;
-  color: #818181;
-  transform: translate(20px, -105px);
+  color: #575757;
+  transform: translate(480px, -108px);
   position: absolute;
-  text-align: left;
 }
+
 .img {
   width: 400px;
   cursor: pointer;
