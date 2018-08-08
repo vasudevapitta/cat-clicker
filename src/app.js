@@ -1,7 +1,7 @@
 let fragment = document.createDocumentFragment();
 let allCats = [];
 class Cat {
-	constructor(name, url, altTxt, id){
+	constructor({name, url, altTxt="picture of a cat", id}={}){
 		this.name = name + " ↓";
 		this.url = url;
 		this.count = 0;
@@ -44,24 +44,19 @@ let catHolder = {
 };
 */
 
-const cat1 = new Cat("Missy",
-	"https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
-	"picture of a cat",
-	0);
+const cat1 = new Cat({name: "Missy",
+	url: "./src/images/cat0.jpg",
+	id: 0});
 
 cat1.buildTemplate();
 
-const cat2 = new Cat("Smokey",
-	"https://kittentoob.com/wp-content/uploads/2018/06/Cat-Growling.jpg",
-	"picture of a cat",
-	1);
+const cat2 = new Cat({name: "Smokey",
+	url: "./src/images/cat1.jpg",
+	id: 1});
 
 cat2.buildTemplate();
 
-const cat3 = new Cat("Sooty",
-	"https://vignette.wikia.nocookie.net/disney/images/8/89/Cute-Cat.jpg/revision/latest?cb=20130828113117",
-	"picture of a cat",
-	2);
+const cat3 = new Cat({name: "Sooty", url: "./src/images/cat2.jpg", id: 2});
 
 cat3.buildTemplate();
 
