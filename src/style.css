@@ -1,5 +1,8 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: helvetica, arial, 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -9,7 +12,7 @@ h3 {
 
 .num {
   z-index:1;
-  font: normal 100px/150% Arial, Helvetica, sans-serif;
+  font: normal 100px/150% helvetica, arial, 'sans-serif';
   color: #575757;
   transform: translate(20px, -108px);
   position: absolute;
@@ -35,7 +38,8 @@ h3 {
 }
 
 .name {
+  text-align: center;
   font-size: 25px;
   margin: 1px 10px;
-  font: normal 20px/150% Arial, Helvetica, sans-serif;
+  font: normal 20px/150% helvetica, arial, 'sans-serif';
 }
